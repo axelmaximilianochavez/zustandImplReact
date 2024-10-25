@@ -1,0 +1,228 @@
+[
+    {
+        "id": 1,
+        "question": "What is the output of this code?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "5",
+          "10",
+          "15",
+          "20"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 2,
+        "question": "What is the result of the following expression?",
+        "code": "typeof null;",
+        "answers": [
+          "object",
+          "null",
+          "undefined",
+          "string"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 3,
+        "question": "Which of the following is NOT a primitive data type in JavaScript?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "number",
+          "string",
+          "boolean",
+          "array"
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 4,
+        "question": "What is the purpose of the `const` keyword in JavaScript?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "To declare a variable that can be reassigned",
+          "To declare a variable that cannot be reassigned",
+          "To declare a function",
+          "To declare a class"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "question": "How do you declare a function in JavaScript?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "function myFunction()",
+          "let myFunction = () => {}",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 6,
+        "question": "What is the output of the following code?",
+        "code": "console.log(typeof NaN);",
+        "answers": [
+          "number",
+          "NaN",
+          "undefined",
+          "string"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 7,
+        "question": "What is the result of the following expression?",
+        "code": "'hello' + 'world';",
+        "answers": [
+          "helloworld",
+          "hello world",
+          "hello'world",
+          "Error"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 8,
+        "question": "How do you comment a single line in JavaScript?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "// This is a comment",
+          "/* This is a comment */",
+          "# This is a comment",
+          "** This is a comment **"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between `==` and `===` operators?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "`==` checks for equality, `===` checks for strict equality.",
+          "`===` checks for equality, `==` checks for strict equality.",
+          "There is no difference.",
+          "They both check for strict equality."
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 10,
+        "question": "What is the output of the following code?",
+        "code": "console.log(2 ** 3);",
+        "answers": [
+          "6",
+          "8",
+          "9",
+          "16"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 11,
+        "question": "How do you create an array in JavaScript?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "let myArray = [1, 2, 3];",
+          "let myArray = new Array(1, 2, 3);",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 12,
+        "question": "What is the output of the following code?",
+        "code": "console.log(typeof [1, 2, 3]);",
+        "answers": [
+          "array",
+          "object",
+          "number",
+          "string"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 13,
+        "question": "How do you access the second element of an array named `myArray`?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "myArray[1]",
+          "myArray[2]",
+          "myArray[0]",
+          "myArray[-1]"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 14,
+        "question": "What is the output of the following code?",
+        "code": "console.log(Math.floor(Math.random() * 10));",
+        "answers": [
+          "A random number between 0 and 9 (inclusive)",
+          "A random number between 1 and 10 (inclusive)",
+          "A random number between 0 and 10 (exclusive)",
+          "A random number between 1 and 9 (exclusive)"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 15,
+        "question": "What is the purpose of the `for` loop in JavaScript?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "To execute a block of code repeatedly",
+          "To define a function",
+          "To create an array",
+          "To declare a variable"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 16,
+        "question": "What is the output of the following code?",
+        "code": "for (let i = 0; i < 5; i++)",
+        "answers": [
+          "0 1 2 3 4",
+          "1 2 3 4 5",
+          "0 1 2 3",
+          "1 2 3 4"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 17,
+        "question": "What is the purpose of the `if...else` statement in JavaScript?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "To execute code conditionally",
+          "To create a loop",
+          "To define a function",
+          "To declare a variable"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "question": "What is the output of the following code?",
+        "code": "let x = 10;",
+        "answers": [
+          "x is greater than 5",
+          "x is less than or equal to 5",
+          "Error",
+          "Nothing"
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "question": "What is the purpose of the `switch` statement in JavaScript?",
+        "code": "const x = 5;\nlet y = 10;\nconsole.log(x + y);",
+        "answers": [
+          "To execute different code blocks based on different conditions",
+          "To create a loop",
+          "To define a function",
+          "To declare a variable"
+        ],
+        "correctAnswer": 0
+      }
+]
