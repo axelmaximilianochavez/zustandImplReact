@@ -9,15 +9,20 @@ function App() {
   console.log(questions)
   return (
     <main>
-      <Container maxWidth='sm'>
-        <Stack direction='row' gap={1} alignItems='center' justifyContent='center'>
-          <Typography variant='h2' component='h1'>
+      <Container maxWidth="sm">
+        <Stack
+          direction="row"
+          gap={1}
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Typography variant="h2" component="h1">
             JavaScript Quizz
           </Typography>
         </Stack>
 
-        {questions.length == 0 && <Start/>}
-        {questions.length > 0 && <Game/>}
+        {questions.length == 0 && <Start />}
+        {questions.length > 0 && <Game />}
       </Container>
     </main>
   )
