@@ -11,17 +11,27 @@ import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { useQuestionsStore } from './store/questions'
 import { type Question as QuestionType } from './types'
 
+const getBackgroundColor = (info: QuestionType, index: number) => {
+  const { userSelectedAnswer, correctAnswer } = info
+
+  // user haven't selected any yet
+  if (userSelectedAnswer == null) return 'transparent'
+  // user selected but is wrong
+  if (index != correctAnswer && index != userSelectedAnswer)
+    return 'transparent'
+  // correct answer
+  if (index == correctAnswer) return 'green'
+  // wrong
+  if (index == userSelectedAnswer) return 'red'
+  // none of the above
+  return 'transparent'
+}
+
 const Question = ({ info }: { info: QuestionType }) => {
   const selectAnswer = useQuestionsStore(state => state.selectAnswer)
 
   const createHandleClick = (answerIndex: number) => () => {
     selectAnswer(info.id, answerIndex)
-  }
-
-  const getBackgroundColor = (index: number) => {
-    const { userSelectedAnswer, correctAnswer } = info
-
-    return 'transparent'
   }
 
   return (
@@ -39,8 +49,9 @@ const Question = ({ info }: { info: QuestionType }) => {
         {info.answers.map((answer, index) => (
           <ListItem key={index} disablePadding divider>
             <ListItemButton
+              disabled={info.userSelectedAnswer != null}
               onClick={createHandleClick(index)}
-              sx={{ backgroundColor: getBackgroundColor(index) }}
+              sx={{ backgroundColor: getBackgroundColor(info, index) }}
             >
               <ListItemText primary={answer} />
             </ListItemButton>
